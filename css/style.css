@@ -2,15 +2,20 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   outline: 1px solid red;    
+   /* outline: 1px solid red; */
 }
 
 body {
    margin: 0;
    padding: 0;
    font-family: 'Oswald', sans-serif;
-   height: 100vw; 
-   max-width: 1400px;
+   width: 100%;
+   background-color: #161837;
+}
+
+a {
+   text-decoration: none;
+   color: white;
 }
 
 /* butons */
@@ -65,24 +70,22 @@ body {
    margin-right: 15px;
 }
 
-
 /* butons */
 
-/* logo */
 
-/*End logo */
+/*firstscreen*/
+
+.firstscreen{
+   background-image: url("/img/first.jpg");
+   background-size:cover;
+   width: 100%;
+   height: 100vh;
+}
 
 .container {
    max-width: 1110px;
    width: 100%;
    margin: 0 auto;
-}
-
-.firstscreen{
-   background-image: url(/img/first.jpg);
-   background-size: auto;
-   width: 100%;
-   height: auto;
 }
 
 .header {
@@ -133,30 +136,469 @@ body {
 .firstscreen-bottom__left {
    display: flex;
    margin-bottom: 120px;
+   align-items: center;
 }
 
 .firstscreen-bottom__right {
    display: flex;
    flex-direction:column;
    align-items: flex-end;
+   margin-left: auto;
 
 }
 
-.logo-img1 {
+/* end firstscreen*/
+
+.featured {
+   min-height: 224px;
+   background-color: #25295C;
+}
+.featured a {
+   
+   color: #4F5388;
+   width: 185px;
+   text-align: center;
+}
+
+.featured-top-title {
+   margin-bottom: 10px;
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 11px;
+   text-transform: uppercase;
+   color: #4F5388;
+   padding-top: 50px;
+}
+
+.featured-top {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+
+.featured-title {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 40px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-right: auto;
+}
+
+.featured-bottom {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 65px;
+}
+
+/* end Featured */
+
+/* feedback */
+
+.feedback-title {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 56px;
+   line-height: 64px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding-top: 100px;
+   margin-bottom: 45px;
+}
+
+.feedback-items__top {
+   display: flex;
+}
+
+.feedback-item {
+   position: relative;
+   display: flex;
+}
+
+.feedback-image {
+   position: relative;
+   display: flex;
+   align-items: flex-end;
+}
+
+.feedback-image::before {
+   content: "";
    position: absolute;
-   right: 355px;
-   bottom: 160px;
+   bottom: 0;
+   left: 30px;
+   width: 160px;
+   height: 224px;
+   background: #25295C;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+   z-index: -1;
 }
 
-.logo-img2 {
-   position: absolute;
-   right: 295px;
-   bottom: 130px;
+.feedback-item:last-child {
+   margin-left: 45px;
 }
 
-.logo-img3 {
-   position: absolute;
-   right: 295px;
-   bottom: 130px;
-   background-color: gray;
+.feedback-item img {
+   margin-right: 40px;
 }
+
+.feedback_description{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.feedback-text {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF; 
+  
+}
+
+.feedback-name {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   
+}
+
+.feedback-name-description {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 11px;
+   color: #626589;
+}
+
+
+.feedback-items__bottom {
+   margin-top: 95px;
+   display: grid;
+   grid-gap: 30px;
+   grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.feedback-item__bottom {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-self: center;
+   max-width: 350px;
+   min-height: 505px;
+   justify-content: space-evenly;
+   padding-bottom: 65px;
+}
+/* end feedback */
+
+/* about */
+.about {
+   background-image: url(/img/about/BG_Color.png);
+   background-color: #161837;
+   width: 100%;
+   max-height: 100%;
+   display: flex;
+   flex-direction: row;
+}
+.about-left {
+   width: 50%;
+   margin-right: 95px;
+}
+
+.about-title {
+   padding-top: 50px;
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 56px;
+   line-height: 64px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding-bottom: 50px;
+
+}
+
+.about-description {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
+   padding-bottom: 50px;
+}
+
+.about-right {
+ padding-top: 85px;
+ padding-left: 50px;
+}
+
+.about-name {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: right;
+   text-transform: uppercase;
+   color: #92CA18;
+}
+
+.about-name-description {
+   color: #626589;
+   text-align: right;
+}
+
+/* end about */
+
+/* achievements */
+
+.achievements {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 20px;
+}
+.experience {
+   margin-right: 30px;
+}
+
+.years {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 64px;
+   line-height: 56px;
+   text-transform: uppercase;
+   color: #92CA18;
+   padding-right: 120px;
+   padding-bottom: 20px;
+}
+
+.years-title{
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 32px;
+   text-transform: uppercase;
+   color: #626589;
+}
+
+.clients {
+   margin-right: 30px;
+}
+
+.amount {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 64px;
+   line-height: 56px;
+   text-transform: uppercase;
+   color: #92CA18;
+   padding-right: 120px;
+   padding-bottom: 20px;
+}
+
+.amount-title {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 32px;
+   text-transform: uppercase;
+   color: #626589;
+}
+
+.achievements-img{
+   padding-right: 30px;
+}
+
+.achievement-description {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #626589;
+}
+
+/* end achievements */
+
+/* Features Section  */
+
+.features {
+   background: url("/img/Features.png");
+   background-size:cover;
+   width: 100%;
+   height: 100vh;
+}
+
+.features-top-items {
+   padding-top: 135px;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.features-top-items:last-child {
+   padding-right: 30px;
+}
+
+.features-top-item {
+   display: flex;
+   padding-left: 30px;
+}
+
+.features-image {
+
+}
+
+.features-description {
+   padding-left: 30px;
+}
+
+.features-title {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
+}
+
+.features-text {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #FFFFFF;
+}
+
+.features-main-title {
+   padding-top: 60px;
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 56px;
+   line-height: 64px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.features-bottom-items {
+   padding-top: 100px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.features-bottom-item {
+   display: flex;
+}
+
+.features-image {
+
+}
+
+.features-description {
+
+}
+
+.features-title {
+
+}
+
+.features-text {
+   padding-right: 20px;
+   
+
+}
+
+/* Nutritions plans */
+.nutrition {
+   background: url("/img/nutritionbg.png");
+   background-size:cover;
+   width: 100%;
+   min-height: 815px;
+   padding-top: 150px; 
+}
+.nutrition-top {
+   display: flex;
+}
+
+.nutrition-description {
+
+}
+
+.nutrition-title {
+   padding-top: 50px;
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 56px;
+   line-height: 64px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding-bottom: 50px;
+}
+
+.nutrition-text {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
+}
+
+.nutrition-bottom {
+margin-top: -50px;
+
+}
+
+.nutrition-bottom-items {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 50px;
+
+}
+
+.nutrition-bottom-item {
+
+}
+
+.nutrition-bottom-image {
+
+}
+
+.nutrition-title {
+
+}
+
+.nutrition-description {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #626589;
+}
+
+/* end Nutritions plans */
+
