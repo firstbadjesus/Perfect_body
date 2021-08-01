@@ -44,6 +44,7 @@ a {
    line-height: 64px;
    border: none;
    margin-right: 25px;
+   
 }
 
 .opaciti-btn {
@@ -68,6 +69,21 @@ a {
    width: 30px;
    height: 24px;
    margin-right: 15px;
+}
+
+.white-btn {
+   width: 317px;
+   height: 64px;
+   border-radius: 100px;
+   border: none;
+   color: #92CA18;
+   background-color: white;
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 64px;
+   text-transform: uppercase;
 }
 
 /* butons */
@@ -144,7 +160,6 @@ a {
    flex-direction:column;
    align-items: flex-end;
    margin-left: auto;
-
 }
 
 /* end firstscreen*/
@@ -154,7 +169,6 @@ a {
    background-color: #25295C;
 }
 .featured a {
-   
    color: #4F5388;
    width: 185px;
    text-align: center;
@@ -177,7 +191,6 @@ a {
    justify-content: space-between;
    margin-bottom: 15px;
 }
-
 
 .featured-title {
    font-family: Oswald;
@@ -261,7 +274,6 @@ a {
    font-size: 16px;
    line-height: 24px;
    color: #FFFFFF; 
-  
 }
 
 .feedback-name {
@@ -272,7 +284,6 @@ a {
    line-height: 24px;
    text-transform: uppercase;
    color: #FFFFFF;
-   
 }
 
 .feedback-name-description {
@@ -343,8 +354,8 @@ a {
 }
 
 .about-right {
- padding-top: 85px;
- padding-left: 50px;
+   padding-top: 85px;
+   padding-left: 50px;
 }
 
 .about-name {
@@ -464,10 +475,6 @@ a {
    padding-left: 30px;
 }
 
-.features-image {
-
-}
-
 .features-description {
    padding-left: 30px;
 }
@@ -511,22 +518,8 @@ a {
    display: flex;
 }
 
-.features-image {
-
-}
-
-.features-description {
-
-}
-
-.features-title {
-
-}
-
 .features-text {
    padding-right: 20px;
-   
-
 }
 
 /* Nutritions plans */
@@ -539,10 +532,6 @@ a {
 }
 .nutrition-top {
    display: flex;
-}
-
-.nutrition-description {
-
 }
 
 .nutrition-title {
@@ -568,26 +557,18 @@ a {
 
 .nutrition-bottom {
 margin-top: -50px;
-
 }
 
 .nutrition-bottom-items {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 50px;
-
 }
 
 .nutrition-bottom-item {
-
-}
-
-.nutrition-bottom-image {
-
-}
-
-.nutrition-title {
-
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .nutrition-description {
@@ -602,3 +583,207 @@ margin-top: -50px;
 
 /* end Nutritions plans */
 
+/* options */
+
+.main-title {
+   padding-top: 100px;
+   padding-bottom: 55px;
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 56px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.option-items {
+   position: relative;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 30px;
+   padding-bottom: 100px;
+}
+
+.option-item {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   width: 350px;
+   min-height: 598px;
+   background: #25295C;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   box-sizing: border-box;
+   padding-bottom: 40px;
+   border-radius:  4px;
+}
+
+.option-item:nth-child(2) {
+   background: #92CA18;
+}
+
+
+.option-img {
+   padding-top: 8px;
+   padding-bottom: 20px;
+}
+
+.option-title {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 40px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   padding-bottom: 20px;
+}
+
+.option-price {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px;
+   line-height: 23px;
+   text-align: center;
+   color: #626589;
+   padding-bottom: 40px;
+}
+
+.option-text {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 0 50px;
+   padding-bottom: 40px;
+}
+
+/* end options */
+
+/* cashback */
+
+.cashback {
+   display: flex;
+   padding-bottom: 100px;  
+
+}
+
+.cashback-left {
+   margin-right: 90px;
+
+}
+
+.cashback-bottom-title {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 40px;
+   line-height: 48px;
+   text-transform: uppercase;
+   color: #25295C;
+   padding-bottom: 30px;
+}
+
+.cashback-bottom-text {  
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #626589;
+   padding-bottom: 20px;
+}
+
+/* end cashback */
+.footer {
+   display: flex;
+} 
+
+.footer-menu {
+   display: flex;
+   padding-bottom: 60px;
+}
+
+.footer-menu-left {
+   width: 50%;
+}
+
+.footer-menu-right {
+   display: flex;
+}
+
+.footer-column-item {
+   display: flex;
+}
+
+.footer-column-title {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 24px;
+   color: #FFFFFF;
+   padding-bottom: 40px;
+}
+
+.footer-column-text {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #626589;
+   padding-bottom: 40px;
+}
+
+.social-links a {
+   padding: 10px 10px;
+   border: 2px solid  #92CA18;
+   border-radius: 100%;
+   align-items: center;
+   margin-left: 15px;
+}
+
+.footer-column-item img {
+   margin-right: 20px; 
+   margin-top: -25px; 
+}
+
+.footer-column-item p{
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #626589;
+   padding-bottom: 20px;
+}
+
+.footer-column-items li {
+   font-family: Gotham Pro;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 16px;
+   color: #626589;
+   padding-bottom: 20px;
+}
+
+.footer-column-items {
+   margin-right: 60px;
+}
+
+
+/* footer */
+
+
+
+/* end footer */
