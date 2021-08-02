@@ -1,3 +1,13 @@
+@font-face {
+   font-family: "Gotham Pro Light";
+   src: url("../fonts/GothamPro-Light.eot");
+   src: url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamPro-Light.woff") format("woff"),
+    url("../fonts/GothamPro-Light.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+  }
+
 :root {
    --white : #FFFFFF;
    --green : #92CA18;
@@ -26,6 +36,15 @@ a {
    color: var(--white);
 }
 
+ p {
+   font-family: "Gotham Pro Light";
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--white); 
+ }
+
 /* butons */
 .header-menu-btn {
    box-sizing: border-box;
@@ -51,8 +70,7 @@ a {
    font-size: 16px;
    line-height: 64px;
    border: none;
-   margin-right: 25px;
-   
+   margin-right: 25px;   
 }
 
 .opaciti-btn {
@@ -70,9 +88,9 @@ a {
    font-weight: bold;
    font-size: 16px;
    line-height: 64px;
-   text-transform: uppercase;
-   
+   text-transform: uppercase;  
 }
+
 .opaciti-btn img {
    width: 30px;
    height: 24px;
@@ -169,10 +187,6 @@ a {
    position: absolute;
    right: 206px;
    bottom: 92px;
-   /* display: flex;
-   flex-direction:column;
-   align-items: flex-end;
-   margin-left: auto; */
 }
 
 /* end firstscreen*/
@@ -281,7 +295,8 @@ a {
 }
 
 .feedback-text {
-   font-family: Gotham Pro;
+   font-family: "Gotham Pro Light";
+   /* font-family: Gotham Pro; */
    font-style: normal;
    font-weight: normal;
    font-size: 16px;
@@ -357,9 +372,6 @@ a {
 }
 
 .about-description {
-   font-family: Gotham Pro;
-   font-style: normal;
-   font-weight: normal;
    font-size: 16px;
    line-height: 24px;
    color: var(--white);
@@ -541,15 +553,14 @@ a {
    background: url("../img/nutritionbg.png");
    background-size:cover;
    width: 100%;
-   min-height: 815px;
    padding-top: 150px; 
 }
+
 .nutrition-top {
    display: flex;
 }
 
-.nutrition-title {
-   padding-top: 50px;
+.nutrition-main-title {
    font-family: Oswald;
    font-style: normal;
    font-weight: bold;
@@ -557,7 +568,18 @@ a {
    line-height: 64px;
    text-transform: uppercase;
    color: var(--white);
-   padding-bottom: 50px;
+   margin-bottom: 50px;
+}
+
+.nutrition-title {
+   font-family: Oswald;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 32px;
+   line-height: 64px;
+   text-transform: uppercase;
+   color: var(--white);
+
 }
 
 .nutrition-text {
@@ -570,13 +592,18 @@ a {
 }
 
 .nutrition-bottom {
-margin-top: -50px;
+   margin-top: -50px;
 }
 
 .nutrition-bottom-items {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 50px;
+}
+
+.nutrition-bottom-image {
+   width: 100%;
+   object-fit: contain;
 }
 
 .nutrition-bottom-item {
@@ -687,12 +714,10 @@ margin-top: -50px;
 .cashback {
    display: flex;
    padding-bottom: 100px;  
-
 }
 
 .cashback-left {
    margin-right: 90px;
-
 }
 
 .cashback-bottom-title {
