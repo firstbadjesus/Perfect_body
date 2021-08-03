@@ -14,13 +14,14 @@
    --blue : #4F5388;
    --deep-blue : #25295C;
    --black : #0a0d35;
+   
 }
 
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   outline: 1px solid red;
+   /* outline: 1px solid red; */
 }
 
 body {
@@ -173,7 +174,11 @@ a {
    font-size: 16px;
    line-height: 24px;
    color: var(--white);
-   margin-bottom: 50px;
+   margin-bottom: 120px;
+}
+
+.firstscreen{
+   position: relative;
 }
 
 .firstscreen-bottom__left {
@@ -183,10 +188,10 @@ a {
 }
 
 .firstscreen-bottom__right {
-   background-size: cover;
    position: absolute;
    right: 206px;
    bottom: 92px;
+   
 }
 
 /* end firstscreen*/
@@ -266,6 +271,7 @@ a {
    position: relative;
    display: flex;
    align-items: flex-end;
+   margin-bottom: 20px;
 }
 
 .feedback-image::before {
@@ -296,12 +302,12 @@ a {
 
 .feedback-text {
    font-family: "Gotham Pro Light";
-   /* font-family: Gotham Pro; */
    font-style: normal;
    font-weight: normal;
    font-size: 16px;
    line-height: 24px;
    color: var(--white); 
+   padding-bottom: 40px;
 }
 
 .feedback-name {
@@ -312,6 +318,7 @@ a {
    line-height: 24px;
    text-transform: uppercase;
    color: var(--white);
+   padding-bottom: 10px;
 }
 
 .feedback-name-description {
@@ -340,7 +347,7 @@ a {
    max-width: 350px;
    min-height: 505px;
    justify-content: space-evenly;
-   padding-bottom: 65px;
+   padding-bottom: 50px;
 }
 /* end feedback */
 
@@ -367,7 +374,7 @@ a {
    line-height: 64px;
    text-transform: uppercase;
    color: var(--white);
-   padding-bottom: 50px;
+   padding-bottom: 40px;
 
 }
 
@@ -742,8 +749,15 @@ a {
 }
 
 /* end cashback */
+
+/* footer */
+
+
+
 .footer {
+   padding-top: 50px;
    display: flex;
+   background-color: #25295C;;
 } 
 
 .footer-menu {
@@ -761,6 +775,7 @@ a {
 
 .footer-column-item {
    display: flex;
+   cursor: pointer;
 }
 
 .footer-column-title {
@@ -818,10 +833,8 @@ a {
 
 .footer-column-items {
    margin-right: 60px;
-}
+} 
 
-
-/* footer */
 
 
 
